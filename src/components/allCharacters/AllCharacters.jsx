@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export default class AllCharacters extends Component {
+export default class Home extends Component {
 
   state = {
     allCharacters: []
@@ -17,7 +17,7 @@ export default class AllCharacters extends Component {
   }
 
   render() {
-    console.log(this.state.allCharacters)
+    console.log(this.state.allCharacters.results)
     return (
       <p>Place Holder for Home page</p>
     );
