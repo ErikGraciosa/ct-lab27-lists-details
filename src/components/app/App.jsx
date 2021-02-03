@@ -5,7 +5,7 @@ import {
   Switch,
 } from "react-router-dom";
 import Details from '../details/Details';
-import Home from '../home/Home';
+import AllCharacters from '../allCharacters/AllCharacters';
 import Header from '../header/Header';
 
 
@@ -18,7 +18,7 @@ export default function App() {
         <Route 
             path="/" 
             exact
-            render={(routerProps) => <Home {...routerProps} />} 
+            render={(routerProps) => <AllCharacters {...routerProps} />} 
           />
           <Route 
             path="/details" 
