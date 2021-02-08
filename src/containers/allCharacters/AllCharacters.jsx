@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Character from './Character';
+import Character from '../../components/characters/Character';
 import styles from './AllCharacters.css';
 
 export default class Home extends Component {

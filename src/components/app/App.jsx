@@ -4,8 +4,8 @@ import {
   Route,
   Switch,
 } from 'react-router-dom';
-import Details from '../details/Details';
-import AllCharacters from '../allCharacters/AllCharacters';
+import Details from '../../containers/details/Details';
+import AllCharacters from '../../containers/allCharacters/AllCharacters';
 import Header from '../header/Header';
 
 

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import DetailCharacters from './DetailCharacter';
+// eslint-disable-next-line
+import DetailCharacters from '../../components/detailCharacters/DetailCharacter';
 
 export default class Details extends Component {
 
