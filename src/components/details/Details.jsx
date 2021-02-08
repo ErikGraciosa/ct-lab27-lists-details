@@ -26,7 +26,6 @@ export default class Details extends Component {
 
   render() {
 
-    console.log(this.state);
     const { name, species, image, status } = this.state;
 
     return (

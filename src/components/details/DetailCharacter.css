@@ -1,0 +1,11 @@
+p {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+img {
+  height: 300px;
+  width: 300px
+}

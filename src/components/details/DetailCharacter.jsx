@@ -1,9 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './DetailCharacter.css';
 
 function Character({ name, image, species, status }) {
   return (
-    <div href="./2">{name}
+    <div>
+      <p>{name}</p>
       <img src={image} />
       <p>Species: {species}</p>
       <p>Status: {status}</p>
