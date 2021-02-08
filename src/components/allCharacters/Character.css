@@ -1,0 +1,13 @@
+a {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  height: 350px;
+  width: 350px;
+  margin: auto;
+}
+
+img {
+  height: 300px;
+  width: 300px
+}

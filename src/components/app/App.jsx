@@ -3,7 +3,7 @@ import {
   BrowserRouter as Router,
   Route,
   Switch,
-} from "react-router-dom";
+} from 'react-router-dom';
 import Details from '../details/Details';
 import AllCharacters from '../allCharacters/AllCharacters';
 import Header from '../header/Header';
@@ -15,13 +15,13 @@ export default function App() {
       <Router>
         <Header />
         <Switch>
-        <Route 
+          <Route 
             path="/" 
             exact
             render={(routerProps) => <AllCharacters {...routerProps} />} 
           />
           <Route 
-            path="/details" 
+            path="/:details" 
             exact
             render={(routerProps) => <Details {...routerProps} />} 
           />

@@ -1,25 +1,36 @@
 import React, { Component } from 'react';
+import Character from './Character';
+import styles from './AllCharacters.css';
 
 export default class Home extends Component {
-
   state = {
     allCharacters: []
   }
 
-  componentDidMount = async () => {
+  componentDidMount = async() => {
     const characters = await fetch('https://rickandmortyapi.com/api/character')
       .then(res => res.json());
 
     this.setState({
-      allCharacters: characters
-    })  
-
+      allCharacters: characters.results
+    }); 
   }
 
   render() {
-    console.log(this.state.allCharacters.results)
+
+    const { allCharacters } = this.state;
     return (
-      <p>Place Holder for Home page</p>
+      <>
+        <div className={styles.AllCharacters}>
+          {allCharacters.map(char => 
+            <Character 
+              key={Math.random()} 
+              name={char.name}
+              image={char.image}
+              id={char.id} />
+          )}
+        </div>
+      </>
     );
   }
 }
