@@ -3,12 +3,14 @@
 exports[`App component renders App 1`] = `
 <DocumentFragment>
   <div>
+    <p />
+    <img />
     <p>
-      Welcome to Dimension C-132
+      Species: 
     </p>
-    <div
-      class="AllCharacters"
-    />
+    <p>
+      Status: 
+    </p>
   </div>
 </DocumentFragment>
 `;
